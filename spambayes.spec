@@ -7,7 +7,7 @@ License:	distributable
 Group:		Applications/Mail
 Vendor:		<spambayes@python.org>
 Source0:	http://dl.sourceforge.net/spambayes/%{name}-%{version}.tar.gz
-# Source0-md5:	bdcb60676b829cab4c18fe5ec6d0f4f0
+# Source0-md5:	3dc9582aae341e23b8a527d9fad4cfb3
 Patch0:		%{name}-doc_paths.patch
 Patch1:		%{name}-scripts.patch
 URL:		http://spambayes.sourceforge.net/
