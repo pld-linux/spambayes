@@ -66,4 +66,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.txt
 %attr(755,root,root) %{_bindir}/sb_*.py
-%{py_sitescriptdir}/spambayes
+%{py_sitedir}/spambayes
