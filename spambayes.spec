@@ -54,6 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.txt
 %doc $RPM_BUILD_ROOT/tmp/{pspam,contrib}
+%dir %{_libdir}/spambayes
 %attr(755,root,root) %{_libdir}/spambayes/*.py
 %dir %{_libdir}/spambayes/contrib
 %attr(755,root,root) %{_libdir}/spambayes/contrib/b*
