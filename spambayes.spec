@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 Summary:	Spambayes - tool used to segregate unwanted mail
 Summary(pl):	Spambayes - narzêdzie do oddzielania niechcianej poczty
 Name:		spambayes
