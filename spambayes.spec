@@ -1,13 +1,13 @@
 Summary:	Spambayes - tool used to segregate unwanted mail
 Summary(pl):	Spambayes - narzêdzie do oddzielania niechcianej poczty
 Name:		spambayes
-Version:	1.0a6.1
+Version:	1.0a7
 Release:	0.1
 License:	distributable
 Group:		Applications/Mail
 Vendor:		<spambayes@python.org>
 Source0:	http://dl.sourceforge.net/spambayes/%{name}-%{version}.tar.gz
-# Source0-md5:	f8b84ef6b582334794eaf97718b5ad9f
+# Source0-md5:	40cc724b21a57a2b1b1e07155ce320f4
 Patch0:		%{name}-doc_paths.patch
 Patch1:		%{name}-scripts.patch
 URL:		http://spambayes.sourceforge.net/
@@ -31,7 +31,7 @@ mo¿na u¿ywaæ Spambayesa do klasyfikowania nowej poczty w zale¿no¶ci od
 stopnia jej "spamowo¶ci".
 
 %prep
-%setup -q -n %{name}-1.0a6
+%setup -q
 %patch0 -p1
 %patch1 -p1
 
