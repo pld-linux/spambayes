@@ -14,7 +14,10 @@ URL:		http://spambayes.sourceforge.net/
 BuildRequires:	ed
 BuildRequires:	python-devel >= 2.2
 BuildRequires:	rpm-pythonprov
+BuildRequires:	rpmbuild(macros) >= 1.140
+BuildRequires:	%{py_sitescriptdir}
 %pyrequires_eq	python
+Requires:	%{py_sitescriptdir}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -66,4 +69,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.txt
 %attr(755,root,root) %{_bindir}/sb_*.py
-%{py_sitedir}/spambayes
+%{py_sitescriptdir}/spambayes
