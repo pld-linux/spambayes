@@ -13,7 +13,6 @@ Patch0:		%{name}-scripts.patch
 URL:		http://spambayes.sourceforge.net/
 BuildRequires:	ed
 BuildRequires:	python-devel >= 2.2
-BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.140
 BuildRequires:	%{py_sitescriptdir}
 %pyrequires_eq	python
