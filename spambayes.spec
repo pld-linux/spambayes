@@ -55,7 +55,7 @@ python setup.py install \
 #install contrib/BULK.txt $RPM_BUILD_ROOT/tmp/contrib
 #install pspam/README.txt $RPM_BUILD_ROOT/tmp/pspam
 
-find $RPM_BUILD_ROOT%{py_sitedir}/spambayes -name '*.py' | xargs rm -f
+find $RPM_BUILD_ROOT%{py_sitescriptdir}/spambayes -name '*.py' | xargs rm -f
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -64,4 +64,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.txt
 %attr(755,root,root) %{_bindir}/sb_*.py
-%{py_sitedir}/spambayes
+%{py_sitescriptdir}/spambayes
