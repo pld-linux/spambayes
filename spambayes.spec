@@ -9,7 +9,6 @@ Group:		Applications/Mail
 Vendor:		<spambayes@python.org>
 Source0:	http://dl.sourceforge.net/spambayes/%{name}-%{version}.tar.gz
 # Source0-md5:	78c33e79888d410711ff3c7dd7e98d79
-Patch0:		%{name}-scripts.patch
 URL:		http://spambayes.sourceforge.net/
 BuildRequires:	ed
 BuildRequires:	python-devel >= 2.2
@@ -40,7 +39,6 @@ stopnia jej "spamowo¶ci".
 # Files in the tarball are 0444, so patching will not
 # work without this.
 chmod -R u+w .
-%patch0 -p1
 
 echo -e ",s:/usr/local/bin/python:/usr/bin/python:g\n,w\nq" | ed utilities/loosecksum.py
 
