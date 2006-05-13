@@ -6,16 +6,14 @@ Release:	1
 Epoch:		1
 License:	PSF
 Group:		Applications/Mail
-Vendor:		<spambayes@python.org>
 Source0:	http://dl.sourceforge.net/spambayes/%{name}-%{version}.tar.gz
 # Source0-md5:	78c33e79888d410711ff3c7dd7e98d79
 URL:		http://spambayes.sourceforge.net/
 BuildRequires:	ed
 BuildRequires:	python-devel >= 2.2
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.140
-BuildRequires:	%{py_sitescriptdir}
-%pyrequires_eq	python
-Requires:	%{py_sitescriptdir}
+%pyrequires_eq	python-libs
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
