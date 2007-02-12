@@ -1,5 +1,5 @@
 Summary:	Spambayes - tool used to segregate unwanted mail
-Summary(pl):	Spambayes - narzêdzie do oddzielania niechcianej poczty
+Summary(pl.UTF-8):   Spambayes - narzÄ™dzie do oddzielania niechcianej poczty
 Name:		spambayes
 Version:	1.0.4
 Release:	1
@@ -24,13 +24,13 @@ choice you need to train it on representative samples of email you
 receive. After it's been trained, you use Spambayes to classify new
 mail according to its spamminess and hamminess qualities.
 
-%description -l pl
-Spambayes jest narzêdziem s³u¿±cym do oddzielania niechcianej poczty
-(spamu) od poczty po¿±danej (ham). Zanim Spambayes stanie siê filtrem
-spamu o po¿±danych przez u¿ytkownika cechach, trzeba go nauczyæ na
-podstawie reprezentatywnych próbek otrzymanej poczty. Po nauczeniu,
-mo¿na u¿ywaæ Spambayesa do klasyfikowania nowej poczty w zale¿no¶ci od
-stopnia jej "spamowo¶ci".
+%description -l pl.UTF-8
+Spambayes jest narzÄ™dziem sÅ‚uÅ¼Ä…cym do oddzielania niechcianej poczty
+(spamu) od poczty poÅ¼Ä…danej (ham). Zanim Spambayes stanie siÄ™ filtrem
+spamu o poÅ¼Ä…danych przez uÅ¼ytkownika cechach, trzeba go nauczyÄ‡ na
+podstawie reprezentatywnych prÃ³bek otrzymanej poczty. Po nauczeniu,
+moÅ¼na uÅ¼ywaÄ‡ Spambayesa do klasyfikowania nowej poczty w zaleÅ¼noÅ›ci od
+stopnia jej "spamowoÅ›ci".
 
 %prep
 %setup -q
