@@ -9,10 +9,10 @@ Group:		Applications/Mail
 Source0:	http://dl.sourceforge.net/spambayes/%{name}-%{version}.tar.gz
 # Source0-md5:	78c33e79888d410711ff3c7dd7e98d79
 URL:		http://spambayes.sourceforge.net/
-BuildRequires:	ed
 BuildRequires:	python-devel >= 2.2
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.140
+BuildRequires:	sed >= 4.0
 %pyrequires_eq	python-libs
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -34,11 +34,7 @@ stopnia jej "spamowości".
 
 %prep
 %setup -q
-# Files in the tarball are 0444, so patching will not
-# work without this.
-chmod -R u+w .
-
-echo -e ",s:/usr/local/bin/python:/usr/bin/python:g\n,w\nq" | ed utilities/loosecksum.py
+%{__sed} -i -e '1s,#!.*/bin/python,#!%{_bindir}/python,' utilities/loosecksum.py
 
 %build
 python setup.py build
