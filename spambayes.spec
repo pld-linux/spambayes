@@ -2,7 +2,7 @@ Summary:	Spambayes - tool used to segregate unwanted mail
 Summary(pl.UTF-8):	Spambayes - narzędzie do oddzielania niechcianej poczty
 Name:		spambayes
 Version:	1.0.4
-Release:	1
+Release:	2
 Epoch:		1
 License:	PSF
 Group:		Applications/Mail
